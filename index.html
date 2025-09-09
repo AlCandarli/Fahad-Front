@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.I.S.E CHECK - تسجيل المستخدمين</title>
+    <meta name="description" content="نظام تسجيل المستخدمين الحديث والأنيق">
+    <link rel="icon" href="image.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <header>
+                <h1>تسجيل المستخدم</h1>
+            </header>
+
+            <form id="registrationForm" novalidate>
+                <div class="form-group">
+                    <label for="name">الاسم الكامل</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="أدخل اسمك الكامل"
+                        required
+                        autocomplete="name"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@email.com"
+                        required
+                        autocomplete="email"
+                    >
+                </div>
+
+                <button type="submit" id="submitBtn">
+                    <span>تسجيل المستخدم</span>
+                </button>
+            </form>
+
+            <nav class="buttons">
+                <button id="displayData" type="button">
+                    <span>عرض البيانات</span>
+                </button>
+            </nav>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; جميع الحقوق محفوظة لـ <a href="https://fahadwm101.github.io/FAHAD.GITHUP/" target="_blank" rel="noopener noreferrer">CHEETAH</a></p>
+    </footer>
+
+    <!-- Notification System -->
+    <div id="notification" class="notification" role="alert" aria-live="polite"></div>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
