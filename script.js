@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         submitBtn.innerHTML = '<span>جاري التسجيل...</span>';
 
         try {
-            const response = await fetch('https://fahad-back.vercel.app//auth/register', {
+            const response = await fetch('https://fahad-back.vercel.app/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
